@@ -5,13 +5,22 @@
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "sender": "ts-node ./example/sender.ts",
+    "reciever": "ts-node  ./example/reciever.ts"
   },
   "keywords": [],
   "author": "habib23me",
   "license": "ISC",
   "prepublish": "tsc",
   "devDependencies": {
-    "typescript": "^2.7.2"
+    "@types/amqplib": "^0.8.0",
+    "@types/lodash": "^4.14.170"
+  },
+  "dependencies": {
+    "typescript": "^2.7.2",
+    "amqplib": "^0.8.0",
+    "lodash": "^4.17.21",
+    "ts-node": "^10.0.0"
   }
 }
